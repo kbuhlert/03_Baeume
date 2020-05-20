@@ -3,10 +3,10 @@ package UE02_AddAndSearch;
 public class Node
 {
     // TODO: Membervariablen hinzufügen
-    private int number;
+    private final int number;
     private Node left;
     private Node right;
-    private Node parent;
+    // private Node parent; --> Parent-Knoten brauchen wir hier nicht, da in diesen Beispielen nicht wichtig
 
     // *** Konstruktor ***
 
@@ -25,9 +25,6 @@ public class Node
         return number;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
-    }
 
     public Node getLeft() {
         return left;
@@ -45,11 +42,4 @@ public class Node
         this.right = right;
     }
 
-    public Node getParent() {
-        return parent;
-    }
-
-    public void setParent(Node parent) {
-        this.parent = parent;
-    }
 }
